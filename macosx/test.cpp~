@@ -1,0 +1,20 @@
+#include "fssimplewindow.h"
+
+int main(void)
+{
+  FsOpenWindow(16,16,800,600,0);
+
+  for(;;)
+    {
+      FsPollDevice();
+      if(FSKEY_ESC==FsInkey())
+	{
+	  break;
+	}
+
+      glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+      FsSwapBuffers();
+      FsSleep(25);
+    }
+  return 0;
+}

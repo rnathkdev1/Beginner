@@ -1,0 +1,16 @@
+solid surface
+	facet normal 0.0319736 0.225037 0.965968
+		outer loop
+			vertex 0 0 1
+			vertex 0 0.1 0.980067
+			vertex 0.1 0.1 0.97517
+		endloop
+	endfacet
+	facet normal -0.0654444 -0.23005 -0.989134
+		outer loop
+			vertex 0 0 1
+			vertex 0.1 0.1 0.97517
+			vertex 0.1 0 0.995004
+		endloop
+	endfacet
+endsolid surface
